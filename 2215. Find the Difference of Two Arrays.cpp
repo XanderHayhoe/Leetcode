@@ -1,5 +1,6 @@
 #include<string>
 #include<vector>
+#include<unordered_set>
 using namespace std;
 /*
 
@@ -32,8 +33,7 @@ public:
             if(hash1.count(nums2[i]) == 0 && std::count(ans[1].begin(), ans[1].end(), nums2[i]) == 0) {
                 ans[1].push_back(nums2[i]);
             }
-        }
-        cout << hash2.count(1);        
+        }      
         return ans;
         // iterate thru array 1
         // 
